@@ -1,0 +1,15 @@
+
+
+.introText {
+  width: 100%;
+  height: 93%;
+  display: flex;
+  
+}
+
+.introP {
+  margin: auto;
+  margin-left: 300px; /* Important */ 
+  padding-bottom: 20vh;
+  font-size: 40px;
+}

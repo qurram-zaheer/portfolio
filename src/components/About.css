@@ -1,0 +1,14 @@
+.about{
+  display: flex;
+  height: 100%
+}
+
+.about-card{
+  margin: auto;
+  margin-left: 300px;
+}
+
+.profile{
+  height: 100%;
+  border-radius: 5px;
+}

@@ -1,0 +1,12 @@
+.bgmain{
+  
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  height: 100vh
+}
+
+.firstbg{
+  background-image: url('../assets/bgp.png');
+}
+
