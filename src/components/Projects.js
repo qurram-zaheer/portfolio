@@ -5,6 +5,7 @@ import qdex from "../assets/qdex.png";
 import gharrow from "../assets/gharrow.png";
 import gh from "../assets/gh.png";
 import git from "../assets/git.png";
+import Fade from "react-reveal/Fade";
 import "./Project.css";
 
 class Projects extends React.Component {
@@ -24,9 +25,14 @@ class Projects extends React.Component {
   render() {
     return (
       <div className="project">
-        <div className="projects-card flex flex-wrap pa4 w-60">
-          <div className=" w-50 pa2 ">
-            <div className="w-100 pa2">
+        <div className="projects-card flex flex-wrap  w-60">
+          <Fade duration={1500}>
+            <div className="w-60 f3 lh-title  gray alata bb pb1">
+              Projects:{" "}
+            </div>
+          </Fade>
+          <div className=" mt4 w-50 pl2 pr3 pb3 grow">
+            <div className="w-100 ">
               <img className="br2 shadow-2" src={qdex}></img>
             </div>
             {/* <div className="w-50 alata pt2">
@@ -34,8 +40,8 @@ class Projects extends React.Component {
             PokeAPI, powered by React
           </div> */}
           </div>
-          <div className="w-50 pa2">
-            <div className="w-100 pa2">
+          <div className="mt4 w-50 pl2 pr3 pb3 grow">
+            <div className="w-100 ">
               <img className="br2 shadow-2" src={jsr}></img>
             </div>
             {/* <div className="w-50 alata pt2">
@@ -43,8 +49,8 @@ class Projects extends React.Component {
             functional backend and database using express.js and PostgreSQL
           </div> */}
           </div>
-          <div className="w-50 pa2">
-            <div className="w-100 pa2">
+          <div className="w-50 pl2 pr3 pb3 grow">
+            <div className="w-100 ">
               <img className="br2 shadow-2" src={qf}></img>
             </div>
             {/* <div className="w-50 alata pt2">
@@ -54,8 +60,8 @@ class Projects extends React.Component {
             for backend and database
           </div> */}
           </div>
-          <div className=" pa2 w-50">
-            <div className="w-100 pa2">
+          <div className="  w-50 pl2 pr3 pb3 grow">
+            <div className="w-100 ">
               <img className="br2 shadow-2" src={git}></img>
               {/* {this.state.moreHover ? (
                 <img

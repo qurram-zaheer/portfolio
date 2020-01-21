@@ -1,19 +1,19 @@
 import React from "react";
-import "./Home.css";
+
 import Intro from "./Intro";
 import About from "./About";
-import Projects from './Projects'
+import Projects from "./Projects";
 
 const Home = () => {
   return (
     <div>
-      <div className="bgmain firstbg">
+      <div style={{ height: "100vh" }}>
         <Intro />
       </div>
       <div style={{ height: "100vh" }}>
         <About />
       </div>
-      <div style = {{height:'100vh'}}>
+      <div style={{ height: "100vh" }}>
         <Projects />
       </div>
     </div>
