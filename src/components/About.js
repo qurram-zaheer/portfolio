@@ -2,6 +2,7 @@ import React from "react";
 import "./About.css";
 import profilePic from "../assets/dp.jpeg";
 import arrow from "../assets/arrow.png";
+import arrows from "../assets/arrows.png";
 import Fade from "react-reveal/Fade";
 const techArray = [
   "JS(ES6+)",
@@ -20,7 +21,9 @@ const About = () => {
       >
         <div className="about-card flex flex-wrap w-60 alata near-white  mr0 pa3">
           <Fade duration={1500}>
-            <div className="w-50 f3 lh-title pr2 pb1 gray bb">About me</div>
+            <div className="w-50 f3 lh-title pr2 pb1 silver bb">
+              <img className="pr1" src={arrow}></img>About me
+            </div>
           </Fade>
           <Fade delay={200} duration={1500}>
             <div className="w-100 pa2 mt2 josefin" style={{ fontSize: "18px" }}>
@@ -43,7 +46,7 @@ const About = () => {
                 return (
                   <div className="w-50 pa0 ma0">
                     <ul className="pa0 ma2" style={{ fontSize: "13px" }}>
-                      <img className="pr1" src={arrow}></img>
+                      <img className="pr1" src={arrows}></img>
                       {skill}
                     </ul>
                   </div>

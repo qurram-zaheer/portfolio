@@ -4,6 +4,7 @@ import jsr from "../assets/jsr.png";
 import qdex from "../assets/qdex.png";
 import gharrow from "../assets/gharrow.png";
 import gh from "../assets/gh.png";
+import arrow from "../assets/arrow.png";
 import git from "../assets/git.png";
 import Fade from "react-reveal/Fade";
 import "./Project.css";
@@ -12,78 +13,172 @@ class Projects extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      moreHover: false
+      hoverID: ""
     };
   }
 
-  hoverOnArrow = () => {
-    this.setState({ moreHover: true });
+  hoverOnArrow = event => {
+    this.setState({ hoverID: event.target.id });
   };
   leaveArrow = () => {
-    this.setState({ moreHover: false });
+    this.setState({ hoverID: "" });
   };
   render() {
     return (
       <div className="project">
         <div className="projects-card flex flex-wrap  w-60">
           <Fade duration={1500}>
-            <div className="w-60 f3 lh-title  gray alata bb pb1">
-              Projects:{" "}
+            <div className="w-80 f3 lh-title silver alata bb pb1">
+              <img className="pr1" src={arrow}></img>Projects:{" "}
             </div>
           </Fade>
-          <div className=" mt4 w-50 pl2 pr3 pb3 grow">
-            <div className="w-100 ">
-              <img className="br2 shadow-2" src={qdex}></img>
-            </div>
+          <div className=" mt4 w-30 pl2 pr3 pb3 grow pimage vh-25 pointer">
+            <a
+              href="https://github.com/qurram-zaheer/qurram_dex"
+              target="_blank"
+            >
+              <div
+                id="p1"
+                className="w-100 br2"
+                style={{
+                  backgroundImage: `url(${qdex})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  height: "100%"
+                }}
+                onMouseEnter={this.hoverOnArrow}
+                onMouseLeave={this.leaveArrow}
+              >
+                {this.state.hoverID === "p1" ? (
+                  <div
+                    className="br2 center alata "
+                    style={{
+                      height: "100%"
+                    }}
+                  >
+                    <div className="w-70 center pt5">
+                      <p className="ba black">QurramDex</p>
+                    </div>
+                    <div className="w-10"></div>
+                  </div>
+                ) : null}
+              </div>
+            </a>
             {/* <div className="w-50 alata pt2">
             Dynamic Pokedex webapp, with pokemon details up to Gen 5, using
             PokeAPI, powered by React
           </div> */}
           </div>
-          <div className="mt4 w-50 pl2 pr3 pb3 grow">
-            <div className="w-100 ">
-              <img className="br2 shadow-2" src={jsr}></img>
-            </div>
+          <div className="mt4 w-30 pl2 pr3 pb3 grow pimage vh-25 pointer">
+            <a
+              href="https://github.com/qurram-zaheer/jsrec-frontend"
+              target="_blank"
+            >
+              <div
+                className="w-100 br2"
+                id="p2"
+                style={{
+                  backgroundImage: `url(${jsr})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  height: "100%"
+                }}
+                onMouseEnter={this.hoverOnArrow}
+                onMouseLeave={this.leaveArrow}
+              >
+                {this.state.hoverID === "p2" ? (
+                  <div
+                    className="br2 center alata "
+                    style={{
+                      height: "100%"
+                    }}
+                  >
+                    <div className="w-70 center pt5 ">
+                      <p className="ba black">JSRec</p>
+                    </div>
+                  </div>
+                ) : null}
+                {/* <img className="br2 shadow-2" src={jsr}></img> */}
+              </div>
+            </a>
             {/* <div className="w-50 alata pt2">
             Face recognition webapp using Clarifai API, powered by React. Fully
             functional backend and database using express.js and PostgreSQL
           </div> */}
           </div>
-          <div className="w-50 pl2 pr3 pb3 grow">
-            <div className="w-100 ">
-              <img className="br2 shadow-2" src={qf}></img>
-            </div>
+          <div className="mt4 w-30 pl2 pr3 pb3 grow pimage vh-25 pointer">
+            <a
+              href="https://github.com/qurram-zaheer/qfeedbacker"
+              target="_blank"
+            >
+              <div
+                className="w-100 br2"
+                id="p3"
+                style={{
+                  backgroundImage: `url(${qf})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  height: "100%"
+                }}
+                onMouseEnter={this.hoverOnArrow}
+                onMouseLeave={this.leaveArrow}
+              >
+                {this.state.hoverID === "p3" ? (
+                  <div
+                    className="br2 center alata "
+                    style={{
+                      height: "100%"
+                    }}
+                  >
+                    <div className="w-70 center pt5 ">
+                      <p className="ba black">qFeedbacker</p>
+                    </div>
+                  </div>
+                ) : null}
+                {/* <img className="br2 shadow-2" src={jsr}></img> */}
+              </div>
+            </a>
             {/* <div className="w-50 alata pt2">
-            Webapp for dynamic email survey creation and batch sending of
-            emails, powered by React, Redux for frontend, OAuth using Google
-            API, Stripe JS for payments, and express and MongoDB(via Mongoose)
-            for backend and database
+            Face recognition webapp using Clarifai API, powered by React. Fully
+            functional backend and database using express.js and PostgreSQL
           </div> */}
           </div>
-          <div className="  w-50 pl2 pr3 pb3 grow">
-            <div className="w-100 ">
-              <img className="br2 shadow-2" src={git}></img>
-              {/* {this.state.moreHover ? (
-                <img
-                  className="dim pa2 pointer center"
-                  src={gh}
-                  onMouseEnter={this.hoverOnArrow}
-                  onMouseLeave={this.leaveArrow}
-                ></img>
-              ) : (
-                <img
-                  className=" shrink pa2 link pointer center"
-                  src={gharrow}
-                  onMouseEnter={this.hoverOnArrow}
-                  onMouseLeave={this.leaveArrow}
-                ></img>
-              )} */}
-            </div>
+          <div className="mt4 w-30 pl2 pr3 pb3 grow pimage vh-25 pointer">
+            <a href="https://github.com/qurram-zaheer" target="_blank">
+              <div
+                className="w-100 br2"
+                id="git"
+                style={{
+                  backgroundImage: `url(${git})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  height: "100%"
+                }}
+                onMouseEnter={this.hoverOnArrow}
+                onMouseLeave={this.leaveArrow}
+              >
+                {this.state.hoverID === "git" ? (
+                  <div
+                    className="br2 center alata "
+                    style={{
+                      height: "100%"
+                    }}
+                  >
+                    <div className="w-70 center pt5 ">
+                      <p className="ba black">Check out my Github!</p>
+                    </div>
+                  </div>
+                ) : null}
+                {/* <img className="br2 shadow-2" src={jsr}></img> */}
+              </div>
+            </a>
             {/* <div className="w-50 alata pt2">
-            Webapp for dynamic email survey creation and batch sending of
-            emails, powered by React, Redux for frontend, OAuth using Google
-            API, Stripe JS for payments, and express and MongoDB(via Mongoose)
-            for backend and database
+            Face recognition webapp using Clarifai API, powered by React. Fully
+            functional backend and database using express.js and PostgreSQL
           </div> */}
           </div>
         </div>

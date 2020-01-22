@@ -8,7 +8,28 @@
   margin-left: 300px;
 }
 
-img{
-  transition: all .3s ease-in-out;
+
+
+.pimage {
+  transition: filter .3s ease-in-out;
+  -webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);
+  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%); /* FF 35+ */
+}
+.pimage:hover {
+  -webkit-filter: grayscale(0%); 
+  -webkit-transform: translateZ(0);
+-moz-transform: translateZ(0);
+-ms-transform: translateZ(0);
+-o-transform: translateZ(0);
+transform: translateZ(0);/* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
 }
 
+a{
+  text-decoration: none;
+}
