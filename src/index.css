@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
 .alata{
   font-family: 'Alata'
 }

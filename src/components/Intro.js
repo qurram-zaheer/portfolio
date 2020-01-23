@@ -14,7 +14,7 @@ const Intro = () => {
                 "<span style = 'text-align: left;'> Hi, my name is </span>"
               )
 
-              .typeString("<span style = 'color:#27ae60;'>Qurram,</span>")
+              .typeString("<span style = 'color:#6fffc1;'>Qurram,</span>")
               .typeString(
                 "<br><span>and I like building things for <br>the web.</span>"
               )

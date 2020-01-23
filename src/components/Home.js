@@ -6,7 +6,7 @@ import Projects from "./Projects";
 
 const Home = () => {
   return (
-    <div>
+    <div id="home">
       <div style={{ height: "100vh" }}>
         <Intro />
       </div>

@@ -14,15 +14,15 @@ const techArray = [
 ];
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div
-        className="flex flex-wrap ba near-white border-shadow-1 w-60"
+        className="flex flex-wrap ba near-white border-shadow-1 w-70"
         style={{ margin: "auto", marginLeft: "0px" }}
       >
         <div className="about-card flex flex-wrap w-60 alata near-white  mr0 pa3">
           <Fade duration={1500}>
             <div className="w-50 f3 lh-title pr2 pb1 silver bb">
-              <img className="pr1" src={arrow}></img>About me
+              <img alt="" className="pr1" src={arrow}></img>About me
             </div>
           </Fade>
           <Fade delay={200} duration={1500}>
@@ -46,33 +46,18 @@ const About = () => {
                 return (
                   <div className="w-50 pa0 ma0">
                     <ul className="pa0 ma2" style={{ fontSize: "13px" }}>
-                      <img className="pr1" src={arrows}></img>
+                      <img alt="" className="pr1" src={arrows}></img>
                       {skill}
                     </ul>
                   </div>
                 );
               })}
-              {/* <div className="w-50">
-            <ul>
-              <img className="pr1 pa0" src={arrow}></img>Python
-            </ul>
-          </div>
-          <div className="w-50">
-            <ul>
-              <img className="pr1 pa0" src={arrow}></img>JavaScript (ES6+)
-            </ul>
-          </div>
-          <div className="w-50">
-            <ul>
-              <img className="pr1 pa0" src={arrow}></img>Python
-            </ul>
-          </div> */}
             </div>
           </Fade>
         </div>
         <Fade duration={1500}>
           <div className="h5 w-40" style={{ margin: "auto" }}>
-            <img src={profilePic} className="profile ml5"></img>
+            <img alt="" src={profilePic} className="profile ml5"></img>
           </div>
         </Fade>
       </div>

@@ -2,8 +2,6 @@ import React from "react";
 import qf from "../assets/qf.png";
 import jsr from "../assets/jsr.png";
 import qdex from "../assets/qdex.png";
-import gharrow from "../assets/gharrow.png";
-import gh from "../assets/gh.png";
 import arrow from "../assets/arrow.png";
 import git from "../assets/git.png";
 import Fade from "react-reveal/Fade";
@@ -25,17 +23,18 @@ class Projects extends React.Component {
   };
   render() {
     return (
-      <div className="project">
+      <div className="project" id="projects">
         <div className="projects-card flex flex-wrap  w-60">
           <Fade duration={1500}>
             <div className="w-80 f3 lh-title silver alata bb pb1">
-              <img className="pr1" src={arrow}></img>Projects:{" "}
+              <img alt="" className="pr1" src={arrow}></img>Projects:{" "}
             </div>
           </Fade>
           <div className=" mt4 w-30 pl2 pr3 pb3 grow pimage vh-25 pointer">
             <a
               href="https://github.com/qurram-zaheer/qurram_dex"
               target="_blank"
+              rel="noopener"
             >
               <div
                 id="p1"
@@ -74,6 +73,7 @@ class Projects extends React.Component {
             <a
               href="https://github.com/qurram-zaheer/jsrec-frontend"
               target="_blank"
+              rel="noopener"
             >
               <div
                 className="w-100 br2"
@@ -112,6 +112,7 @@ class Projects extends React.Component {
             <a
               href="https://github.com/qurram-zaheer/qfeedbacker"
               target="_blank"
+              rel="noopener"
             >
               <div
                 className="w-100 br2"
@@ -138,16 +139,15 @@ class Projects extends React.Component {
                     </div>
                   </div>
                 ) : null}
-                {/* <img className="br2 shadow-2" src={jsr}></img> */}
               </div>
             </a>
-            {/* <div className="w-50 alata pt2">
-            Face recognition webapp using Clarifai API, powered by React. Fully
-            functional backend and database using express.js and PostgreSQL
-          </div> */}
           </div>
           <div className="mt4 w-30 pl2 pr3 pb3 grow pimage vh-25 pointer">
-            <a href="https://github.com/qurram-zaheer" target="_blank">
+            <a
+              href="https://github.com/qurram-zaheer"
+              target="_blank"
+              rel="noopener"
+            >
               <div
                 className="w-100 br2"
                 id="git"
@@ -169,7 +169,7 @@ class Projects extends React.Component {
                     }}
                   >
                     <div className="w-70 center pt5 ">
-                      <p className="ba black">Check out my Github!</p>
+                      <p className="ba blue">Check out my Github!</p>
                     </div>
                   </div>
                 ) : null}
