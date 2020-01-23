@@ -21,12 +21,18 @@ const About = () => {
       >
         <div className="about-card flex flex-wrap w-60 alata near-white  mr0 pa3">
           <Fade duration={1500}>
-            <div className="w-50 f3 lh-title pr2 pb1 silver bb">
+            <div
+              className="w-50 f3 lh-title pr2 pb1 silver bb"
+              style={{ cursor: "default" }}
+            >
               <img alt="" className="pr1" src={arrow}></img>About me
             </div>
           </Fade>
           <Fade delay={200} duration={1500}>
-            <div className="w-100 pa2 mt2 josefin" style={{ fontSize: "18px" }}>
+            <div
+              className="w-100 pa2 mt2 josefin"
+              style={{ fontSize: "18px", cursor: "default" }}
+            >
               Hi, I'm Qurram and I'm currently a CS undergrad. I enjoy
               programming, and am very passionate about building things in code.
               I am aspiring to be a fullstack developer. I really enjoy speaking

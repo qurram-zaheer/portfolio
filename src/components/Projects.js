@@ -26,7 +26,10 @@ class Projects extends React.Component {
       <div className="project" id="projects">
         <div className="projects-card flex flex-wrap  w-60">
           <Fade duration={1500}>
-            <div className="w-80 f3 lh-title silver alata bb pb1">
+            <div
+              className="w-80 f3 lh-title silver alata bb pb1"
+              style={{ cursor: "default" }}
+            >
               <img alt="" className="pr1" src={arrow}></img>Projects:{" "}
             </div>
           </Fade>

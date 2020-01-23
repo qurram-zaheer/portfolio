@@ -11,12 +11,14 @@ const Intro = () => {
             typewriter
               .changeDelay(50)
               .typeString(
-                "<span style = 'text-align: left;'> Hi, my name is </span>"
+                "<span style = 'cursor: default; text-align: left;'> Hi, my name is </span>"
               )
 
-              .typeString("<span style = 'color:#6fffc1;'>Qurram,</span>")
               .typeString(
-                "<br><span>and I like building things for <br>the web.</span>"
+                "<span style = 'color:#6fffc1;cursor: default;'>Qurram,</span>"
+              )
+              .typeString(
+                "<br><span style = 'cursor: default;'>and I like building things for <br>the web.</span>"
               )
 
               .start();
