@@ -36,3 +36,6 @@ transform: translateZ(0);/* Ch 23+, Saf 6.0+, BB 10.0+ */
 a{
   text-decoration: none;
 }
+p{
+  display: table
+}

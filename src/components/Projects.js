@@ -41,7 +41,7 @@ class Projects extends React.Component {
             >
               <div
                 id="p1"
-                className="w-100 br2"
+                className="w-100 br2 flex"
                 style={{
                   backgroundImage: `url(${qdex})`,
                   backgroundSize: "cover",
@@ -54,13 +54,18 @@ class Projects extends React.Component {
               >
                 {this.state.hoverID === "p1" ? (
                   <div
-                    className="br2 center alata "
+                    className="br2 center alata flex"
                     style={{
                       height: "100%"
                     }}
                   >
-                    <div className="w-70 center pt5">
-                      <p className="ba black">QurramDex</p>
+                    <div className="w-70  center flex">
+                      <p
+                        className="ba"
+                        style={{ color: "#d46666", margin: "auto" }}
+                      >
+                        QurramDex
+                      </p>
                     </div>
                     <div className="w-10"></div>
                   </div>
@@ -79,7 +84,7 @@ class Projects extends React.Component {
               rel="noopener"
             >
               <div
-                className="w-100 br2"
+                className="w-100 br2 flex"
                 id="p2"
                 style={{
                   backgroundImage: `url(${jsr})`,
@@ -93,13 +98,18 @@ class Projects extends React.Component {
               >
                 {this.state.hoverID === "p2" ? (
                   <div
-                    className="br2 center alata "
+                    className="br2 center alata flex"
                     style={{
                       height: "100%"
                     }}
                   >
-                    <div className="w-70 center pt5 ">
-                      <p className="ba black">JSRec</p>
+                    <div className="w-70 center flex ">
+                      <p
+                        className="ba "
+                        style={{ color: "#d46666", margin: "auto" }}
+                      >
+                        JSRec
+                      </p>
                     </div>
                   </div>
                 ) : null}
@@ -111,14 +121,14 @@ class Projects extends React.Component {
             functional backend and database using express.js and PostgreSQL
           </div> */}
           </div>
-          <div className="mt4 w-30 pl2 pr3 pb3 grow pimage vh-25 pointer">
+          <div className="mt4 w-30 pl2 pr3 pb3 grow pimage vh-25 pointer ">
             <a
               href="https://github.com/qurram-zaheer/qfeedbacker"
               target="_blank"
               rel="noopener"
             >
               <div
-                className="w-100 br2"
+                className="w-100 br2 flex"
                 id="p3"
                 style={{
                   backgroundImage: `url(${qf})`,
@@ -132,13 +142,18 @@ class Projects extends React.Component {
               >
                 {this.state.hoverID === "p3" ? (
                   <div
-                    className="br2 center alata "
+                    className="br2 center alata flex"
                     style={{
                       height: "100%"
                     }}
                   >
-                    <div className="w-70 center pt5 ">
-                      <p className="ba black">qFeedbacker</p>
+                    <div className="w-70 flex center  ">
+                      <p
+                        className="ba "
+                        style={{ color: "#d46666", margin: "auto" }}
+                      >
+                        qFeedbacker
+                      </p>
                     </div>
                   </div>
                 ) : null}
@@ -152,7 +167,7 @@ class Projects extends React.Component {
               rel="noopener"
             >
               <div
-                className="w-100 br2"
+                className="w-100 br2 flex"
                 id="git"
                 style={{
                   backgroundImage: `url(${git})`,
@@ -166,13 +181,15 @@ class Projects extends React.Component {
               >
                 {this.state.hoverID === "git" ? (
                   <div
-                    className="br2 center alata "
+                    className="br2 center alata flex"
                     style={{
                       height: "100%"
                     }}
                   >
-                    <div className="w-70 center pt5 ">
-                      <p className="ba blue">Check out my Github!</p>
+                    <div className="w-100 flex center  ">
+                      <p className="ba blue " style={{ margin: "auto" }}>
+                        Check out my Github!
+                      </p>
                     </div>
                   </div>
                 ) : null}
