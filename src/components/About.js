@@ -40,7 +40,7 @@ const About = () => {
               events.
               <br></br>
               <br></br>My goal is to build high performance, modern websites
-              with pixel perfect UIs and very optimized backends
+              with pixel perfect UIs and very optimized backends.
             </div>
           </Fade>
           <Fade delay={600} duration={1500}>
