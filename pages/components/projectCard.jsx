@@ -13,7 +13,7 @@ const ProjectCard = ({ title, content, repo, bg, type, delay }) => {
 						>
 							{title}
 						</div>
-						<div className="text-xs">{type.toUpperCase()}</div>
+						<div className="text-xs">{type}</div>
 					</div>
 					<div className="m-1">
 						<Image
