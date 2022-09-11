@@ -17,7 +17,7 @@ const ProjectCard = ({ title, content, repo, bg, type, delay }) => {
 					</div>
 					<div className="m-1">
 						<Image
-							src={`/images/${bg}.PNG`}
+							src={`/images/${bg}.png`}
 							height={40}
 							width={40}
 							quality={100}
